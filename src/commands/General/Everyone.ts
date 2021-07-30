@@ -15,11 +15,10 @@ export default class Command extends BaseCommand {
         })
     }
 
-    run = async (M: ISimplifiedMessage,{taggedMessage}: IParsedArgs): Promise<void> => {
-        var message = taggedMessage.trim()
+    run = async (M: ISimplifiedMessage): Promise<void> => {
         return void (await M.reply(
             // `${M.groupMetadata?.subject || 'EVERYONE'}\n*[TAGS HIDDEN]*`,
-            `${message} || 'null'}\n\n*[TAGGED MESSAGE]*`,
+            `*[PLEASE READ THE ABOVE MESSAGE]*`,
             undefined,
             undefined,
             M.groupMetadata?.participants.map((user) => user.jid)
