@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
         } 
         return void (await M.reply(
             // `${M.groupMetadata?.subject || 'EVERYONE'}\n*[TAGS HIDDEN]*`,
-            `*${message}*`,
+            `${message}`,
             undefined,
             undefined,
             M.groupMetadata?.participants.map((user) => user.jid)
