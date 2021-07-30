@@ -19,8 +19,12 @@ export default class Command extends BaseCommand {
         var message = "";
         var messageObject = M;
         for (var i = 1; i < M.args.length; i++) {
-            message = message + " " + M.args[i];
-        } 
+            if(i === 1) {
+                message = M.args[1];
+            } else {
+                message = message + " " + M.args[i];
+            }
+        }
         return void (await M.reply(
             // `${M.groupMetadata?.subject || 'EVERYONE'}\n*[TAGS HIDDEN]*`,
             `${message}`,
