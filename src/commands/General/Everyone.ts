@@ -1,7 +1,7 @@
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
-import { ISimplifiedMessage } from '../../typings'
+import { IParsedArgs, ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -15,10 +15,11 @@ export default class Command extends BaseCommand {
         })
     }
 
-    run = async (M: ISimplifiedMessage): Promise<void> => {
+    run = async (M: ISimplifiedMessage,{taggedMessage}: IParsedArgs): Promise<void> => {
+        var message = taggedMessage.trim()
         return void (await M.reply(
             // `${M.groupMetadata?.subject || 'EVERYONE'}\n*[TAGS HIDDEN]*`,
-            `${M.quoted?.message.message || 'null'}\n\n*[TAGGED MESSAGE]*`,
+            `${message} || 'null'}\n\n*[TAGGED MESSAGE]*`,
             undefined,
             undefined,
             M.groupMetadata?.participants.map((user) => user.jid)
