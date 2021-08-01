@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
             }
         }
         if(message === "") {
-             message = "${M.groupMetadata?.subject || 'EVERYONE'}\n*[TAGS HIDDEN]*";
+             message = M.groupMetadata?.subject || "EVERYONE" + "\n*[TAGS HIDDEN]*";
         }
         return void (await M.reply(
             `${message}`,
