@@ -18,11 +18,12 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
 
         var message = ""
-        var day = ""
+        var day = M.args[1]
 
-        for(var i = 1; i < M.args.length; i++) {
-            day = day + M.args[i];
-        }
+        // for(var i = 1; i < M.args.length; i++) {
+        //     day = day + M.args[i];
+        // }
+        
         
         if(day == "monday" || day == "Monday") {
             message = "*8:30 - 9:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *9:30 - 10:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *10:30 - 11:20 : \n Basics of Electronics \n link: moodle vazhi edutho \n\n *11:30 - 12:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *12:30 - 1:20 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n"
