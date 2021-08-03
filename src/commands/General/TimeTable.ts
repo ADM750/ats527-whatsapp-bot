@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
             message = "*8:30 - 9:10 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *9:20 - 10:00 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n\n *10:10 - 10:50 : \n Proffessional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n\n *11:00 - 11:40 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n\n *11:50 - 12:30 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n"
         }
         else {
-            message = "Invalid option!!"
+            message = day;
         }
 
         return void (await M.reply(
