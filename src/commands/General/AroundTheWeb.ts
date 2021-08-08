@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
         if(message === "\"") {
              message = "Your answer is empty!!";
         } else if (isTrue){
-            message = message + "\"\n\nThis answer is correct and deserves an appreciation!!\n\nWohoo";
+            message = message + "\"\n\nThis answer is correct and deserves an appreciation!!\n\nWohoo🤗🤗";
         } else {
             message = "Sorry try again :)";
         }
