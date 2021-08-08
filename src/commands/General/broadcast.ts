@@ -38,3 +38,4 @@ export default class Command extends BaseCommand {
         }
         return `📣 *Broadcast: ${text}*\n\n💌 *Sent to:*\n${groups.join('\n')}`
     }
+}
