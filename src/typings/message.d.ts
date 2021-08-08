@@ -29,3 +29,4 @@ export interface ISimplifiedMessage {
     WAMessage: WAMessage
     urls: string[]
 }
+
