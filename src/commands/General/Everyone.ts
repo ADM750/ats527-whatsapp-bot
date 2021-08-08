@@ -3,6 +3,8 @@ import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { IParsedArgs, ISimplifiedMessage } from '../../typings'
 
+
+
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
@@ -31,7 +33,7 @@ export default class Command extends BaseCommand {
             message,
             undefined,
             undefined,
-            M.groupMetadata?.participants.map((user) => user.jid)
+            M.groupMetadata?.participants.map((user) => user.jid),
         ))
     }
 }

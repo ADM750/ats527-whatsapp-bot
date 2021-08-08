@@ -13,7 +13,8 @@ export default class Command extends BaseCommand {
             command: 'chess',
             description: 'Chessssssss',
             category: 'fun',
-            usage: `${client.config.prefix}chess`
+            usage: `${client.config.prefix}chess`,
+            adminOnly: true
         })
     }
 

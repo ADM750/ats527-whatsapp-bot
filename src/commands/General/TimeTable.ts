@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
             aliases: ['tt', 'subjects'],
             category: 'general',
             usage: `${client.config.prefix}timetable`,
-            adminOnly: false
+            adminOnly: true
         })
     }
 

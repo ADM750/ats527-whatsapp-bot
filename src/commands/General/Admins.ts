@@ -9,7 +9,8 @@ export default class Command extends BaseCommand {
             command: 'admins',
             description: 'Tags all Admins 🎖️',
             category: 'general',
-            usage: `${client.config.prefix}admins (Message)`
+            usage: `${client.config.prefix}admins (Message)`,
+            adminOnly: true
         })
     }
 
