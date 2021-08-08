@@ -14,6 +14,7 @@ export default class Command extends BaseCommand {
             description: 'Triggers you.',
             aliases: ['triggered'],
             category: 'fun',
+            adminOnly: true,
             usage: `${client.config.prefix}trigger [image | @mention]`
         })
     }
