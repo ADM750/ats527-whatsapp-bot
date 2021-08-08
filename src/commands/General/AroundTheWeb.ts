@@ -24,16 +24,16 @@ export default class Command extends BaseCommand {
             if((M.args[i] === "signed" || M.args[i] === "Signed" || M.args[i] === "sign") && (M.args[i+1] === "APK" || M.args[i+1] === "apk" || M.args[i+1] === "Apk")) {
                 isTrue = true;
             }
-            message = message + " " + M.args[i];
+            message = message + "" + M.args[i];
         }
-        if(message === "") {
+        if(message === "\"") {
              message = "Your answer is empty!!";
         } else if (isTrue){
-            message = message + "\"\n\nThis answer is correct and deserves an appreciation!!Wohoo";
+            message = message + "\"\n\nThis answer is correct and deserves an appreciation!!\n\nWohoo";
         } else {
             message = "Sorry try again :)";
         }
-        
+
         return void (await M.reply(
             message,
             undefined,
