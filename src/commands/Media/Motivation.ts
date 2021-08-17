@@ -20,19 +20,27 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
 
-        var videos = ["https://youtu.be/nrBcSzdpLEQ"];
+        var videos = [
+            "https://youtu.be/nrBcSzdpLEQ",
+            "https://www.youtube.com/watch?v=Bi-7pho5XB8",
+            "https://www.youtube.com/watch?v=dI7zTD6QdO8",
+            "https://www.youtube.com/watch?v=ZXcTvbLwsRs",
+            "https://www.youtube.com/watch?v=oXoDZwabiEI",
+        ];
+        var min = 0;
+        var max = 6;
+        var randomNumber =  Math.floor(Math.random() * (max - min) ) + min;
+
 
         // if (!M.urls.length) return void M.reply('Please provide the URL of the YT video you want too download')
-        const video = new YT(videos[0], 'video')
+        const video = new YT(videos[randomNumber], 'video')
         if (!video.validateURL()) return void M.reply(`Please provide a Valid YT URL`)
         const { videoDetails } = await video.getInfo()
         M.reply(
-            await video.getThumbnail(),
-            MessageType.image,
-            Mimetype.jpeg,
+            `*Processing....*`,
             undefined,
-            // `🍥 *Title:* ${videoDetails.title}\n🕰️ *Duration:* ${videoDetails.lengthSeconds}\n🗒️ *Description:* ${videoDetails.description}`
-            "Processing...."
+            undefined,
+            [M.sender.jid],
         )
         // if (Number(videoDetails.lengthSeconds) > 1500)
         //     return void M.reply('Cannot Download videos longer than 25 Minutes')
