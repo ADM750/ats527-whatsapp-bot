@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             message = "*8:30 - 9:20 : \n Electronics Workshop (Kuriyappy Sir) \n link: https://meet.google.com/hjm-wqmc-jdk \n\n *9:30 - 10:20 : \n Electronics Workshop \n link: https://meet.google.com/hjm-wqmc-jdk \n\n *10:30 - 11:20 : \n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n\n *11:30 - 12:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *12:30 - 1:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n"
         }
         else if (day == "friday" || day == "Friday") {
-            message = "*8:30 - 9:10 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *9:20 - 10:00 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n\n *10:10 - 10:50 : \n Proffessional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n\n *11:00 - 11:40 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n\n *11:50 - 12:30 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n"
+            message = "*8:30 - 9:10 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *9:20 - 10:00 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n\n *10:10 - 10:50 : \n Proffessional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n\n *11:00 - 11:40 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n\n *11:50 - 12:30 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n"
         }
         else if (day == "sunday" || day == "Sunday") {
             message = "Go get some sleep"
