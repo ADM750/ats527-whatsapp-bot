@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
             const info = this.client.getContact(user)
             const username = info.notify || info.vname || info.name || user.split('@')[0]
             if (data?.ban) {
-                text += `🟨 ${username}: Already Banned\n`
+                text += `🟨 ${username}: Pay me to unban\n`
                 continue
             }
             await this.client.banUser(user)
