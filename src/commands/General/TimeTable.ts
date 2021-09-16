@@ -44,7 +44,7 @@ export default class Command extends BaseCommand {
             message = "Go get some sleep"
         }
         else if (day == "saturday" || day == "Saturday") {
-            message = "Go watch Dora"
+            message = "Go watch Movies"
         }
         else {
             message = "Go get some help and never come back!!!";
