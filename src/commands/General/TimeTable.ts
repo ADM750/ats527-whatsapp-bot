@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
         
         
         if(day == "monday" || day == "Monday") {
-            message = "*8:30 - 9:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *9:30 - 10:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *10:30 - 11:20 : \n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n\n *11:30 - 12:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *12:30 - 1:20 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n"
+            message = "*8:30 - 9:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *9:30 - 10:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *10:30 - 11:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe\n\n *11:30 - 12:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *12:30 - 1:20 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n"
         } 
         else if (day == "tuesday" || day == "Tuesday") {
             message = "*8:30 - 9:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *9:30 - 10:20 : \n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n\n *10:30 - 11:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *11:30 - 12:20 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n\n *12:30 - 1:20 : \n Professional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n"
