@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
 
         var message = ""
-        var day = M.args[1]
+        var sub = M.args[0]
 
         // for(var i = 1; i < M.args.length; i++) {
         //     sub = sub + M.args[i];
@@ -26,19 +26,19 @@ export default class Command extends BaseCommand {
         
         
         if(sub == "chemistry" || sub == "Chemistry") {
-            message = "\n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n"
+            message = "\n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n";
         } 
-        else if (sub == "pc" || day == "PC") {
-            message = "\n Professional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n"
+        else if (sub == "pc" || sub == "PC") {
+            message = "\n Professional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n";
         }
         else if (sub == "cp" || sub == "CP") {
-            message = "\n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n"
+            message = "\n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n";
         }
         else if (sub == "electronics" || sub == "Electronics") {
-            message = "\n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n"
+            message = "\n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n";
         }
-        else if (sub == "Maths" || day == "maths") {
-            message = "*8:30 - 9:10 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n"
+        else if (sub == "Maths" || sub == "maths") {
+            message = "*8:30 - 9:10 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n";
         }
 
         return void (await M.reply(
