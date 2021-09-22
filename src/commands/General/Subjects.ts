@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
 
         var message = ""
-        var sub = M.args[0]
+        var sub = M.args[1]
 
         // for(var i = 1; i < M.args.length; i++) {
         //     sub = sub + M.args[i];
