@@ -17,28 +17,35 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
 
-        var message = ""
-        var sub = M.args[1]
-
-        // for(var i = 1; i < M.args.length; i++) {
-        //     sub = sub + M.args[i];
-        // }
+        var message = "";
+        var sub = M.args[1];
         
-        
-        if(sub == "chemistry" || sub == "Chemistry") {
-            message = "\n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n";
+        if(sub == "chemistry" || sub == "Chemistry" || sub == "ec" || sub == "EC") {
+            message = "Engineering Chemistry \nlink: https://meet.google.com/yob-ztiq-yqe";
         } 
         else if (sub == "pc" || sub == "PC") {
-            message = "\n Professional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n";
+            message = "Professional Communication \n link: http://meet.google.com/byt-pzzr-pyg";
         }
-        else if (sub == "cp" || sub == "CP") {
-            message = "\n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n";
+        else if (sub == "cp" || sub == "CP" || sub == "CProgramming") {
+            message = "C Programming \n link: https://meet.google.com/yqn-ijpq-qtv";
         }
         else if (sub == "electronics" || sub == "Electronics") {
-            message = "\n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n";
+            message = "Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy";
         }
         else if (sub == "Maths" || sub == "maths") {
-            message = "*8:30 - 9:10 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n";
+            message = "Maths \nlink: https://meet.google.com/gdz-rkfz-aam";
+        }
+        else if (sub == "Graphics" || sub == "graphics" || sub == "eg" || sub == "EG") {
+            message = "Engineering Graphics \nlink: https://meet.google.com/gfk-pbor-mrq";
+        }
+        else if (sub == "electrical" || sub == "Electrical") {
+            message = "Electrical \nlink: http://meet.google.com/psq-mwwt-hyx";
+        }
+        else if (sub == "electricalW/S") {
+            message = "Electrical Workshop \nlink: http://meet.google.com/imr-pvxw-gee";
+        }
+        else if (sub == "electronicsW/S") {
+            message = "Electronics Workshop \nlink: http://meet.google.com/hjm-wqmc-jdk";
         }
 
         return void (await M.reply(
