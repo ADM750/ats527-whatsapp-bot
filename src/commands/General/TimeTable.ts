@@ -7,11 +7,11 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'timetable',
-            description: 'Displays time table of S2 CS',
+            description: 'Displays time table of S3 CS',
             aliases: ['tt', 'subjects'],
             category: 'general',
             usage: `${client.config.prefix}timetable`,
-            adminOnly: true
+            adminOnly: false
         })
     }
 
@@ -26,19 +26,19 @@ export default class Command extends BaseCommand {
         
         
         if(day == "monday" || day == "Monday") {
-            message = "*8:30 - 9:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *9:30 - 10:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *10:30 - 11:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe\n\n *11:30 - 12:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *12:30 - 1:20 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n"
+            message = "*9:15 - 10:10 : \n Design Engineering \n\n *10:15 - 11:10 : \n LSD \n\n *11:20 - 12:15 : \n DCS \n\n *1:00 - 3:50 : \n DS/OOPS LAB \n"
         } 
         else if (day == "tuesday" || day == "Tuesday") {
-            message = "*8:30 - 9:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *9:30 - 10:20 : \n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n\n *10:30 - 11:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *11:30 - 12:20 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n\n *12:30 - 1:20 : \n Professional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n"
+            message = "*9:15 - 10:10 : \n LSD  \n\n *10:15 - 11:10 : \n OOPS  \n\n *11:20 - 12:15 : \n DS \n\n *1:00 - 1:55 : \n SE \n\n *2:00 - 2:55 : \n DCS \n\n *3:00 - 3:50"
         }
         else if (day == "wednesday" || day == "Wednesday") {
-            message = "*8:30 - 9:20 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n\n *9:30 - 10:20 : \n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n\n *10:30 - 11:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *11:30 - 12:20 : \n C Programming \n link: https://meet.google.com/yqn-ijpq-qtv \n\n *12:30 - 1:20 : \n Professional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n"
+            message = "*9:15 - 10:10 : \n DS \n\n *10:15 - 11:10 : \n OOPS \n\n *11:20 - 12:15 : \n DCS \n\n *1:00 - 3:50 : \n DS/OOPS LAB \n\n"
         }
         else if (day == "thursday" || day == "Thursday") {
-            message = "*8:30 - 9:20 : \n Electronics Workshop (Kuriyappy Sir) \n link: https://meet.google.com/hjm-wqmc-jdk \n\n *9:30 - 10:20 : \n Electronics Workshop \n link: https://meet.google.com/hjm-wqmc-jdk \n\n *10:30 - 11:20 : \n Basics of Electronics \n link: https://meet.google.com/fko-pqor-sdy \n\n *11:30 - 12:20 : \n Engineering Chemistry \n link: https://meet.google.com/yob-ztiq-yqe \n\n *12:30 - 1:20 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n"
+            message = "*9:15 - 10:10 : \n DS \n\n *10:15 - 11:10 : \n LSD \n\n *11:20 - 12:15 : \n DS \n\n *1:00 - 1:55 : \n OOPS \n\n *2:00 - 2:55 : \n Minor \n\n *3:00 - 3:50:  \n Minor"
         }
         else if (day == "friday" || day == "Friday") {
-            message = "*8:30 - 9:10 : \n Maths \n link: https://meet.google.com/gdz-rkfz-aam \n\n *9:20 - 10:00 : \n Engineering Graphics \n link: https://meet.google.com/gfk-pbor-mrq \n\n *10:10 - 10:50 : \n Proffessional Communication \n link: http://meet.google.com/byt-pzzr-pyg \n\n *11:00 - 11:40 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n\n *11:50 - 12:30 : \n Engineering Chemistry Lab \n link: https://meet.google.com/yob-ztiq-yqe \n"
+            message = "*9:15 - 10:10 : \n DCS \n\n *10:15 - 11:10 : \n OOPS \n\n *11:20 - 12:15 : \n DE \n\n *2:00 - 2:55 : \n LSD \n\n *3:00 - 3:50 : \n SE \n\n"
         }
         else if (day == "sunday" || day == "Sunday") {
             message = "Go get some sleep"
